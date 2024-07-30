@@ -1,7 +1,17 @@
+import { useState } from "react";
+
 function App() {
+  const [passport, setPassword] = useState("");
+
+  const handelPassport = () => {};
+
   return (
     <>
-      <div className="Container"></div>
+      <div className="Container">
+        <h1>Passport Generator</h1>
+        <input type="text" value={passport} />
+        <button onClick={handelPassport}></button>
+      </div>
     </>
   );
 }
