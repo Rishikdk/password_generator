@@ -3,6 +3,8 @@ import { useState } from "react";
 function App() {
   const [passport, setPassword] = useState("");
 
+  const PassportGenerator = (length) => {};
+
   const handelPassport = () => {};
 
   return (
