@@ -5,10 +5,16 @@ function App() {
 
   const PassportGenerator = (length) => {
     const lowerLatter = "abcdefghijklmnopqrstuvwxyz";
+    let password = "";
+    for (let i = 0; i < length; i++) {
+      const result = Math.floor(Math.random() * lowerLatter.length);
+      password += lowerLatter.charAt(result);
+    }
+    return password;
   };
 
   const handelPassport = () => {
-    const nerPassword = PassportGenerator(12);
+    const newPassword = PassportGenerator(12);
     setPassword(newPassword);
   };
 
