@@ -5,6 +5,7 @@ function App() {
 
   const PassportGenerator = (length) => {
     const lowerLatter = "abcdefghijklmnopqrstuvwxyz";
+    const UpperLatter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     let password = "";
     for (let i = 0; i < length; i++) {
       const result = Math.floor(Math.random() * lowerLatter.length);
