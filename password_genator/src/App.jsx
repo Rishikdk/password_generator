@@ -6,10 +6,12 @@ function App() {
   const PassportGenerator = (length) => {
     const lowerLatter = "abcdefghijklmnopqrstuvwxyz";
     const UpperLatter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const SpecialLatter = "!@#$%^&*()_+=-";
+    const NumberLatter = "0123456789";
     let allChar = "";
     let password = "";
 
-    allChar = UpperLatter + lowerLatter;
+    allChar = UpperLatter + lowerLatter + NumberLatter + SpecialLatter;
 
     for (let i = 0; i < length; i++) {
       const result = Math.floor(Math.random() * allChar.length);
